@@ -8,6 +8,11 @@ Scenario: overview of my cards
 	When I select "meus cartões" option
 	Then I can see "meus cartões" page
 
+Scenario: get back to payments page
+	Given I am at the "Meus cartões" page
+	When I select "voltar" 
+	Then I can see "pagamentos" page
+
 Scenario: overview of transaction history
 	Given I am at the "pagamentos" page
 	When I select "histórico de transações" option
